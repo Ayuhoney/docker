@@ -1,0 +1,13 @@
+# Use an official Node.js runtime as a parent image
+FROM ubuntu
+
+# Set the working directory in the container to /app
+WORKDIR /app
+
+ADD . /app
+
+RUN apt update && apt install nodejs -y
+
+CMD node /app/main.js
+
+LABEL color=red

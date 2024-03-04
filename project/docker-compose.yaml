@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  container1:
+    image: ubuntu
+    container_name: container1
+    stdin_open: true
+    tty: true
+    networks:
+      - mynetwork
+
+  container2:
+    image: ubuntu
+    container_name: container2
+    stdin_open: true
+    tty: true
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:   
+    driver: bridge   # Specifies the bridge network driver

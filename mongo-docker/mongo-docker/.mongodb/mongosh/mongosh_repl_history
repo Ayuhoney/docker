@@ -1,0 +1,9 @@
+exit
+eixt
+db.products.find({})
+use products
+show dbs
+exit
+db.products.insertOne({name:"Ayush Sharma"})
+use products
+show dbs
